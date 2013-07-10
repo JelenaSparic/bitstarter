@@ -12,7 +12,7 @@ fileOpen = fs.openSync(src,'r');
 bytesRead = fs.readSync(fileOpen, buffer, 0, BUFFER_LENGTH, pos);
 
 app.get('/', function(request, response) {
-  response.send(buffer.toString('utf-8'));
+  response.send(buffer.toString('utf-8', 0, 27));
 });
 
 var port = process.env.PORT || 5000;
