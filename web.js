@@ -4,7 +4,7 @@ var app = express.createServer(express.logger());
 
 var fs = require('fs');
 var BUFFER_LENGHT = 64 * 1024;
-var buffer = new Buffer(BUFFER_LENGTH);
+var buffer = new Buffer(BUFFER_LENGHT);
 var src = 'index.html';
 var pos = 0;
 
